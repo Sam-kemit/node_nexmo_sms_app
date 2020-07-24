@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/skeleton-framework/1.1.1/skeleton.css" 
+        integrity="sha512-bkbbtvfcVjmlzyq/v4GaSiyJY3DStQhRIbJY9D0qrheR4LgSNNzrEQcdkqdJQUbuYCkLkLCj5icLxdjxRQKsJg==" 
+        crossorigin="anonymous" 
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Node SMS Texting</title>
+</head>
+<body>
+    <div class="loginbox">
+        <img src="img/sms.png" class="avatar">
+        <div class="container">
+            <h1>Send SMS Message</h1>
+            <input type="tel" name="number" id="number" placeholder="Enter Phone Number...">
+            <textarea name="msg" id="msg" cols="26" rows="10" placeholder="Enter Text Message..."></textarea>
+            <input type="button" id="button" value="Send Text" class="button button-primary">
+            <p class="response"></p>
+        </div>
+        <div>
+            <footer>&copy; Copyright 2020 <a href="https://www.linkedin.com/in/samuel-kueta-930a92112" target="_blank">Samuel Kueta</a></footer>
+        </div>
+    </div>
+    
+
+
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
